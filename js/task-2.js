@@ -1,9 +1,9 @@
 function calcAverageCalories(days) {
-  let totalCal = 0;
-  for (const cal of days) {
-    totalCal += cal.calories;
-  }
-  if (totalCal / days.length > 0) {
+  if (days.length !== 0) {
+    let totalCal = 0;
+    for (const cal of days) {
+      totalCal += cal.calories;
+    }
     return totalCal / days.length;
   } else {
     return 0;
